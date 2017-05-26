@@ -1,0 +1,15 @@
+# 自定义忽略文件
+/classes/
+
+# 工作区间文件
+.gradle/
+
+# 生成文件
+*.class
+
+bin/
+out/
+build/
+
+# Log Files
+*.log

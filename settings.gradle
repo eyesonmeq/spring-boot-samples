@@ -1,0 +1,3 @@
+include ':spring-boot-sample-simple'
+
+rootProject.name = 'spring-boot-samples'
