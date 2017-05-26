@@ -1,3 +1,5 @@
 include ':spring-boot-sample-simple'
+include ':spring-boot-sample-logback'
+include ':spring-boot-sample-actuator'
 
 rootProject.name = 'spring-boot-samples'
