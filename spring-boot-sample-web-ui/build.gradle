@@ -1,0 +1,14 @@
+springBoot {
+    classifier = 'exec'
+}
+
+jar {
+	baseName = 'spring-boot-sample-web-ui'
+	version =  '0.1.0'
+}
+
+dependencies {
+	compile("org.springframework.boot:spring-boot-starter-thymeleaf:${springBootVersion}")
+	compile("org.hibernate:hibernate-validator")
+	testCompile("org.springframework.boot:spring-boot-starter-test:${springBootVersion}")
+}

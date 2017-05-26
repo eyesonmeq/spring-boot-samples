@@ -1,0 +1,47 @@
+/**
+ * Copyright (c) 2017, All Rights Reserved. 
+ */
+package sample.web.ui;
+
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
+import java.util.concurrent.atomic.AtomicLong;
+
+/**
+ * ADD FUNCTION
+ *
+ * @date: 2017年5月26日 下午5:08:59
+ * @author Tony 
+ */
+public class InMemoryMessageRepository implements MessageRepository {
+	private static AtomicLong counter = new AtomicLong();
+
+	private final ConcurrentMap<Long, Message> messages = new ConcurrentHashMap<Long, Message>();
+
+	@Override
+	public Iterable<Message> findAll() {
+		return this.messages.values();
+	}
+
+	@Override
+	public Message save(Message message) {
+		Long id = message.getId();
+		if (id == null) {
+			id = counter.incrementAndGet();
+			message.setId(id);
+		}
+		this.messages.put(id, message);
+		return message;
+	}
+
+	@Override
+	public Message findMessage(Long id) {
+		return this.messages.get(id);
+	}
+
+	@Override
+	public void deleteMessage(Long id) {
+		this.messages.remove(id);
+	}
+
+}

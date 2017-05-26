@@ -1,0 +1,19 @@
+apply plugin: 'eclipse-wtp'
+apply plugin: 'war'
+
+war {
+	baseName = 'spring-boot-sample-web-static'
+	version =  '0.1.0'
+}
+
+configurations {
+	providedRuntime
+}
+
+dependencies {
+	compile("org.springframework.boot:spring-boot-starter-web:${springBootVersion}")
+	compile("org.webjars:bootstrap:3.0.3")
+	compile("org.webjars:jquery:2.0.3-1")
+	providedRuntime("org.springframework.boot:spring-boot-starter-tomcat:${springBootVersion}")
+	testCompile("org.springframework.boot:spring-boot-starter-test:${springBootVersion}")
+}
