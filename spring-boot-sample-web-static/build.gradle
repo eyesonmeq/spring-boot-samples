@@ -1,5 +1,6 @@
 apply plugin: 'eclipse-wtp'
 apply plugin: 'war'
+apply plugin: 'org.springframework.boot'
 
 war {
 	baseName = 'spring-boot-sample-web-static'

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="sample.logback.SampleLogbackApplicationTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-05-26T10:12:22" hostname="Tony-PC" time="5.396">
+  <properties/>
+  <testcase name="testLoadedCustomLogbackConfig" classname="sample.logback.SampleLogbackApplicationTests" time="4.294"/>
+  <testcase name="testProfile" classname="sample.logback.SampleLogbackApplicationTests" time="1.102"/>
+  <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2017-05-26 18:12:24.698  INFO 15484 --- [    Test worker] sample.logback.SampleLogbackApplication  : Starting SampleLogbackApplication on Tony-PC with PID 15484 (started by Tony in D:\eclipse-neon\workspace\spring-boot-samples\spring-boot-sample-logback)
+2017-05-26 18:12:24.704 DEBUG 15484 --- [    Test worker] sample.logback.SampleLogbackApplication  : Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+2017-05-26 18:12:24.705  INFO 15484 --- [    Test worker] sample.logback.SampleLogbackApplication  : No active profile set, falling back to default profiles: default
+2017-05-26 18:12:24.804  INFO 15484 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@33ec7a7b: startup date [Fri May 26 18:12:24 CST 2017]; root of context hierarchy
+2017-05-26 18:12:26.191 DEBUG 15484 --- [    Test worker] sample.logback.SampleLogbackApplication  : Sample Debug Message
+2017-05-26 18:12:26.669  INFO 15484 --- [    Test worker] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-26 18:12:26.705  INFO 15484 --- [    Test worker] sample.logback.SampleLogbackApplication  : Started SampleLogbackApplication in 3.261 seconds (JVM running for 5.935)
+2017-05-26 18:12:26.715  INFO 15484 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@33ec7a7b: startup date [Fri May 26 18:12:24 CST 2017]; root of context hierarchy
+2017-05-26 18:12:26.924  INFO 15484 --- [    Test worker] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.3.RELEASE)
+
+2017-05-26 18:12:27.036  INFO 15484 --- [    Test worker] sample.logback.SampleLogbackApplication  : Starting SampleLogbackApplication on Tony-PC with PID 15484 (started by Tony in D:\eclipse-neon\workspace\spring-boot-samples\spring-boot-sample-logback)
+2017-05-26 18:12:27.037 DEBUG 15484 --- [    Test worker] sample.logback.SampleLogbackApplication  : Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+2017-05-26 18:12:27.037  INFO 15484 --- [    Test worker] sample.logback.SampleLogbackApplication  : The following profiles are active: staging
+2017-05-26 18:12:27.056  INFO 15484 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2d0b0b8f: startup date [Fri May 26 18:12:27 CST 2017]; root of context hierarchy
+2017-05-26 18:12:27.791 DEBUG 15484 --- [    Test worker] sample.logback.SampleLogbackApplication  : Sample Debug Message
+2017-05-26 18:12:27.791 TRACE 15484 --- [    Test worker] sample.logback.SampleLogbackApplication  : Sample Trace Message
+2017-05-26 18:12:28.000  INFO 15484 --- [    Test worker] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-26 18:12:28.024  INFO 15484 --- [    Test worker] sample.logback.SampleLogbackApplication  : Started SampleLogbackApplication in 1.083 seconds (JVM running for 7.254)
+2017-05-26 18:12:28.034  INFO 15484 --- [    Test worker] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@2d0b0b8f: startup date [Fri May 26 18:12:27 CST 2017]; root of context hierarchy
+2017-05-26 18:12:28.035  INFO 15484 --- [    Test worker] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
