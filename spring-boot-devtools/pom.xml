@@ -9,28 +9,24 @@
         <relativePath>../spring-boot-parent/pom.xml</relativePath>
     </parent>
 
-    <artifactId>spring-boot-cache-redis</artifactId>
+    <artifactId>spring-boot-devtools</artifactId>
     <packaging>war</packaging>
-    <name>spring-boot-cache-redis</name>
-    <description>Demo project for cache redis</description>
+    <name>spring-boot-devtools</name>
+    <description>Demo project for devtools</description>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
         </dependency>
         <dependency>
-            <groupId>redis.clients</groupId>
-            <artifactId>jedis</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>1.2.12</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
     </dependencies>
 
     <build>
-        <finalName>spring-boot-cache-redis</finalName>
+        <finalName>spring-boot-devtools</finalName>
     </build>
 </project>

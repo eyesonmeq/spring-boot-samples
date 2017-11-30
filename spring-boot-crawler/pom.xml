@@ -9,28 +9,24 @@
         <relativePath>../spring-boot-parent/pom.xml</relativePath>
     </parent>
 
-    <artifactId>spring-boot-cache-redis</artifactId>
+    <artifactId>spring-boot-crawler</artifactId>
     <packaging>war</packaging>
-    <name>spring-boot-cache-redis</name>
-    <description>Demo project for cache redis</description>
+    <name>spring-boot-crawler</name>
+    <description>Demo project for crawler</description>
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <groupId>com.squareup.okhttp3</groupId>
+            <artifactId>okhttp</artifactId>
+            <version>3.4.1</version>
         </dependency>
         <dependency>
-            <groupId>redis.clients</groupId>
-            <artifactId>jedis</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>1.2.12</version>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.9.2</version>
         </dependency>
     </dependencies>
-
     <build>
-        <finalName>spring-boot-cache-redis</finalName>
+        <finalName>spring-boot-crawler</finalName>
     </build>
 </project>
